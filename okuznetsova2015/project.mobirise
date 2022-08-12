@@ -1,0 +1,145 @@
+{
+  "settings": {
+    "name": "Oglaska GitHub io",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.5.2",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/okss2.png",
+    "mbrsiteDomain": "7ldquwik8u",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 3,
+    "versionPublish": "5.5.2"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "content4",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content4\" group=\"Content\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"10\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Мошеннический беспредел</b></h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">или как угореть на 11.000 рублей через Авито</h4>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\">LEARN MORE</a>\n                    <a class=\"btn btn-primary-outline\" href=\"https://mobiri.se\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "teidMDFCuc",
+          "_anchor": "content4-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@fullWidth)": {
+              ".text-wrapper": {
+                "padding": "1rem"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            "img": {
+              "width": "100%"
+            },
+            "@media (min-width: 992px)": {
+              ".text-wrapper": {
+                "padding": "2rem"
+              }
+            }
+          },
+          "_name": "image1",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image1\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/okss-1.png\" alt=\"Mobirise\">\n                    <p class=\"mbr-description mbr-fonts-style pt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">\n                    Оксана</p>\n                </div>\n            </div>\n            <div class=\"col-12\" mbr-class=\"{'col-lg' : !fullWidth, 'col-lg-4' : fullWidth &amp;&amp; textWidth >= 6, 'col-lg-6' : fullWidth &amp;&amp; textWidth <= 5}\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><p><b>Кидалы это не мужики в кожанках</b></p></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Обычно, представляя мошенников или кидал, нам представляются страшные, накачанные, небритые мужики со шрамами. <br><br>Но это далеко не так. <br><br>В современном мире тебя сможет развести достаточно милая и светлая девушка, например, вот такая как на фотографии. <br><br>А это Оксана, и она решила не терять ничего (от слова - совсем) в своей безрисковой афёре через Авито. Или таких афёр было несколько? <br><br>По отзывам - нет, только одно объявление осталось в истории с оценкой 1 звезда. И это самая первая оценка в аккаунте Оксаны, касающаяся холодильника BEKO. <br><br>Удивительно, но именно с холодильником той же марки погорели и мы. Поэтому, Оксана, тебе ещё одна единичка от нас, даже не смотря на то, что ты полностью удалила объявление, и теперь мы не можем оставить тебе настоящий отзыв.<br><br>По сему, всеобщее обсуждение поможет расставить всё точки над и.<br><br><br><br></p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "teidTuAaqX",
+          "_anchor": "image1-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content5",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Как всё было, без воды</h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Итак. Напишу как есть. Только факты. Каждый прочитавший поймёт их по-своему, и пускай.\n<br>Речь пойдёт о холодильнике и жизнях разных людей.\n<br>\n<br>Под статьёй я оставлю публичное голосование, где каждый сможет отметить своё мнение. Также будут открытые комментарии. Таким образом, мы узнаем преобладающее мнение окружающих.\n<br>\n<br>Итак, этот холодильник заказала через Авито мама-одиночка, с доставкой.\n<br>Стоимость его составила 8500 рублей, плюс доставка 2500 рублей.\n<br>\n<br>Привезли, поставили. Я лично присутствовал при доставке и установке.\n<br>Везли !холодильник! на легковом автомобиле белого цвета, на крыше, лёжа.\n<br>Приехали два молодых человека и девушка из объявлений Авито.\n<br>\n<br>Поставили на кухне, просил аккуратно, не заденьте газовый счётчик, нет же, задели.<br><br>Я стал поднимать провод с пола, чтобы включить в розетку, поднимал я его достаточно долго. На глазах у \"грузчиков\" воткнул в розетку. После чего мне сказали: \"Вы что! Нельзя включать в розетку сразу после транспортировки! Нужно подождать 5 часов!\".<br>\n<br>Интересно, почему эта фраза, если она лежала на поверхности, не прозвучала перед установкой холодильника?<br><br>Едем дальше. :)\n<br>\n<br>Выждали 5 часов, включаем, всё работает. Он даже подморозил заднюю стенку) Ну и отлично. Будем пользоваться. Загрузили продукты.\n<br>\n<br>Проходит день. Холодильник умирает. Изнутри лишь слышны потрескивания. Щёлк, включился. Прошло две секунды, щёлк выключился. И так с периодичностью в пару минут.\n<br>\n<br>Холод ушёл, а с ним и свежесть продуктов.\n<br>\n<br>Звоню по мастерам. \n<br>Первый - выезд 2500р. диагностика и ремонт на месте, сумма не известна.\n<br>Ищу дальше, звоню. Не выезжаем, далеко.\n<br>Звоню местному мастеру. Описываю ситуацию и \"симптомы\" холодильника. Получаю ясный ответ: \"Ну если вы его БУ купили, то лучше отдать обратно если возможно, потому что холодильнику конец и это печальный случай. Он у вас день отработал потому что была долита жидкость без устранения протечки, а на моделях BEKO это постоянная и известная проблема. Так что, замена системы жидкости или компрессора - это 7 т.р. и 9 т.р. соответственно.\"\n<br>\n<br>Шах и мат? - Возможно, если это так и задумывалось.<br><br> \nПишем Оксане.&nbsp;<br>Все наши возражения были отработаны достаточно технично, на каждый вопрос был дан развёрнутый ответ, почему мы виноваты в поломке холодильника. Удивила осведомлённость в вопросе, как и в момент установки холодильника, когда люди уже были в курсе о том, что может \"произойти\" с купленным холодильником.<br><br>Ниже выложу скрины переписки.<br><br>\nНемного от себя<br><br>Дорогая Оксана, по твоему совету я почитал интернет. И узнал, что ложить на бок холодильник категорически запрещено, а тем более транспортировать его лёжа. И ты по прежнему будешь утверждать что это наша ошибка и вина?<br><br>Если бы ты действительно хотела чтобы он работал, предупредила бы что его нельзя включать в самом начале, как только вы приехали втроём. Нет же, никто и словом не обмолвился.<br><br>Я думаю, что холодильник был сломан ещё ДО того как его выставили на продажу. Это моё субъективное мнение. И я хочу посмотреть мнение общественности на этот вопрос. Очень хочется, чтобы такого в жизни было как можно меньше, но живя в России, очень часто сталкиваешься с подобного рода недобросовестностью.<br><br>И поверь мне, дорогая, тебе 20 лет, тебя ещё обманут не один десяток раз к 38-40 годам. В те моменты ты будешь ощущать бессилие и апатию, нежелание жить. Возможно будешь плакать. Как плакала моя девушка после сделки с тобой.&nbsp;<br><br>Как ты будешь это всё принимать - твоё дело. Мы же знаем что огласка способна придать сил двигаться дальше, понять общественное мнение и оставить тебя наедине со своим внутренним судом. Прими правльное решение.<br>\n<br>Перед тем как эта статья станет народным достоянием, я даю Продавцу - Кузнецовой Оксане, времени 24 часа чтобы подумать что она будет делать дальше с этой историей о холодильнике. Ведь теперь наше взаимодействие будет продолжаться ДО момента конструктивного решения со стороны продавца холодильника.<br>\n<br>Скоро эту статью увидят десятки тысяч людей плюс все друзья которые находились в списке друзей Оксаны и друзья их друзей на момент написания статьи. Их контакты я сохранил в отдельном месте, дабы Оксана в свойственной ей манере не закрыла свой аккаунт и доступ к друзьям. Не успеваешь уже, дорогая. Мужу своему тоже дай прочитать. Ну и вместе посидите подумайте о том, как вы решаете дела и кого вы кидаете на деньги.<br><br>История будет пополняться по мере её продвижения и все смогут следить за ходом развития.<br>\n<br>Делаю я это в надежде на то, что возможно, в людях что-то поменяется и они будут более человечны в будущем. <br><br>И Хоть мои попытки и надежды достучаться и тщетны, тем не менее, я вложил в это своё время в это изменение.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "teidO1fFRu",
+          "_anchor": "content5-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
